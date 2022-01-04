@@ -4,11 +4,7 @@
 
         <div class="container">
             <h2>Le nostre vetture</h2>
-            <SingleMercedes />
-            <SingleMercedes />
-            <SingleMercedes />
-            <SingleMercedes />
-            <SingleMercedes />
+            <SingleMercedes v-for="(item, index) in cars" :key="index" :objectMercedes="item"/>
         </div>
 
     </main>
@@ -139,6 +135,8 @@ export default {
 
 main {
     .container {
+        padding: 50px 0;
+
         h2 {
             font-size: 36px;
             margin: 50px 0;

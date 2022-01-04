@@ -2,37 +2,37 @@
     <div class="single-mercedes">
         <div class="heading">
             <div class="title">
-                <h3>Mercedes Classe A</h3>
+                <h3>{{ objectMercedes.model}}</h3>
             </div>
             
             <div class="description">
-                <h4>250 e eq-power premium auto</h4>
+                <h4>{{ objectMercedes.description }}</h4>
             </div>
         </div>
         
         <div class="content">
             <div class="image">
-                <img src="https://trivellato.media.weicola.it/trivellato/wrap360/medium/-/+2021+11+22+V031600_619ba39d4aa56.jpg/49993b7f3669501199ac836f6821dcea.jpg" alt="Mercedes Classe A">
+                <img :src="objectMercedes.image" :alt="objectMercedes.model">
             </div>
 
             <div class="text">
                 <div class="col-left">
                     <div class="price">
-                        € 45.900
+                        {{ objectMercedes.price }}
                     </div>
 
                     <div class="km">
                         <span>
                             Km:
                         </span>
-                        0
+                        {{ objectMercedes.km }}
                     </div>
 
                     <div class="fuel">
                         <span>
                             Alimentazione:
                         </span>
-                        Elettrica
+                        {{ objectMercedes.fuel }}
                     </div>
                 </div>
 
@@ -41,21 +41,21 @@
                         <span>
                             Potenza:
                         </span>
-                        218 CV
+                        {{ objectMercedes.hp }}
                     </div>
 
                     <div class="displacement">
                         <span>
                             Cilindrata:
                         </span>
-                        1.332
+                        {{ objectMercedes.displacement }}
                     </div>
 
                     <div class="color">
                         <span>
                             Colore:
                         </span>
-                        Nero
+                        {{ objectMercedes.color }}
                     </div>
                 </div>
             </div>
