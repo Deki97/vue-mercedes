@@ -25,10 +25,13 @@ export default {
 
 header {
     background-color: $page-primary-color;
+    border-bottom: 1px solid lighten($page-primary-color, 30%);
+    height: 95px;
     
     .container {
         display: flex;
         align-items: center;
+        height: 100%;
     
         .logo-left {
             width: 100px;
