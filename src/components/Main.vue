@@ -5,6 +5,10 @@
         <div class="container">
             <h2>Le nostre vetture</h2>
             <SingleMercedes />
+            <SingleMercedes />
+            <SingleMercedes />
+            <SingleMercedes />
+            <SingleMercedes />
         </div>
 
     </main>
@@ -30,10 +34,10 @@ export default {
                    "description": "250 e eq-power premium auto",
                    "price": "€ 45.900",
                    "km": "0",
-                   "fuel": "Electric",
-                   "hp": "218 HP",
+                   "fuel": "Elettrica",
+                   "hp": "218 CV",
                    "displacement": "1.332",
-                   "color": "Black"
+                   "color": "Nero"
                 },
                 {
                    "image": "https://trivellato.media.weicola.it/trivellato/wrap360/medium/-/+2021+09+27+V034181_6151c1a18eb64.jpg/5f7390ed977131bdfbab0869bad310fa.jpg",
@@ -41,10 +45,10 @@ export default {
                    "description": "250 e plug-in hybrid(e-eq-power) premium auto",
                    "price": "€ 43.900",
                    "km": "0",
-                   "fuel": "Electric",
-                   "hp": "218 HP",
+                   "fuel": "Elettrica",
+                   "hp": "218 CV",
                    "displacement": "1.332",
-                   "color": "Blue"
+                   "color": "Blu"
                 },
                 {
                    "image": "https://trivellato.media.weicola.it/trivellato/wrap360/medium/-/+2021+12+10+V035748_61b334aaeafa3.jpg/18addba7647582a6c9511672fe318929.jpg",
@@ -53,9 +57,9 @@ export default {
                    "price": "€ 38.000",
                    "km": "34.300",
                    "fuel": "Diesel",
-                   "hp": "194 HP",
+                   "hp": "194 CV",
                    "displacement": "1.950",
-                   "color": "Silver"
+                   "color": "Argento"
                 },
                 {
                    "image": "https://trivellato.media.weicola.it/trivellato/wrap360/medium/-/+2021+11+30+V034571_61a6056a6edeb.jpg/6f52446ecd86659da75e892342ffa85f.jpg",
@@ -64,9 +68,9 @@ export default {
                    "price": "€ 35.800",
                    "km": "76.535",
                    "fuel": "Diesel",
-                   "hp": "194 HP",
+                   "hp": "194 CV",
                    "displacement": "1.950",
-                   "color": "Silver"
+                   "color": "Argento"
                 },
                 {
                    "image": "https://trivellato.media.weicola.it/trivellato/wrap360/medium/-/+2021+10+28+V034225_617a59efd0b8b.jpg/d566707db988096a0fb74310ade58225.jpg",
@@ -75,9 +79,9 @@ export default {
                    "price": "€ 28.000",
                    "km": "96.650",
                    "fuel": "Diesel",
-                   "hp": "136 HP",
+                   "hp": "136 CV",
                    "displacement": "2.143",
-                   "color": "Black"
+                   "color": "Nero"
                 },
                 {
                    "image": "https://trivellato.media.weicola.it/trivellato/wrap360/medium/-/+2021+10+27+V034719_617994da831e4.jpg/4cccdbf9b90375588240cf3658e90505.jpg",
@@ -86,9 +90,9 @@ export default {
                    "price": "€ 125.627",
                    "km": "0",
                    "fuel": "Diesel",
-                   "hp": "330 HP",
+                   "hp": "330 CV",
                    "displacement": "2.925",
-                   "color": "Grey"
+                   "color": "Grigio"
                 },
                 {
                    "image": "https://trivellato.media.weicola.it/trivellato/wrap360/medium/-/+2021+12+23+V033216_61c45e198e817.jpg/f5d8d46ee23d94cad49555661bfb3f1b.jpg",
@@ -97,9 +101,9 @@ export default {
                    "price": "€ 49.888",
                    "km": "0",
                    "fuel": "Diesel",
-                   "hp": "150 HP",
+                   "hp": "150 CV",
                    "displacement": "1.950",
-                   "color": "White"
+                   "color": "Bianco"
                 },
                 {
                    "image": "https://trivellato.media.weicola.it/trivellato/wrap360/medium/-/+2021+12+21+V036632_61c1fb3d5a256.jpg/fc6451de05f3c5a5fd051d78e40cd877.jpg",
@@ -107,10 +111,10 @@ export default {
                    "description": "gle coupe 350 de plug-in hybrid(e eq-power) premium pro 4matic auto",
                    "price": "€ 106.417",
                    "km": "0",
-                   "fuel": "Hybrid",
-                   "hp": "194 HP",
+                   "fuel": "Ibrido",
+                   "hp": "194 CV",
                    "displacement": "1.950",
-                   "color": "White"
+                   "color": "Bianco"
                 },
                 {
                    "image": "https://trivellato.media.weicola.it/trivellato/wrap360/medium/-/+2021+11+29+V035644_61a5246a0fafe.jpg/70011e3317e8c4b55e9d1c7a3bf37ccf.jpg",
@@ -118,10 +122,10 @@ export default {
                    "description": "4.0 462cv auto",
                    "price": "€ 79.800",
                    "km": "47.050",
-                   "fuel": "Gasoline",
-                   "hp": "462 HP",
+                   "fuel": "Benzina",
+                   "hp": "462 CV",
                    "displacement": "3.982",
-                   "color": "Silver"
+                   "color": "Argento"
                 }
             ]
         }
@@ -131,11 +135,14 @@ export default {
 
 
 <style lang="scss" scoped>
+@import '../style/variables.scss';
+
 main {
     .container {
         h2 {
             font-size: 36px;
             margin: 50px 0;
+            color: lighten($page-secondary-color, 10%);
         }
     }
 }
